@@ -59,7 +59,11 @@ img {
 
 .coverimg img {
   width: 100%;
+  bottom: 0;
+  position: absolute;
 }
+
+/* ==================================== */
 
 .big-item3-1 {
   grid-row: 2 / span 2;
@@ -100,6 +104,17 @@ img {
   height: 96%;
 }
 
+/* ==================================== */
+
+.blogs-item {
+  background-color: #fff;
+  background-image: radial-gradient(
+    circle at 1px 1px,
+    rgb(99, 99, 99) 1px,
+    transparent 0
+  );
+  background-size: 30px 30px;
+}
 /* ========================================================================= */
 
 @media (max-width: 600px) {

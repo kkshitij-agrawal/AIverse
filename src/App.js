@@ -21,7 +21,7 @@ function App() {
           </div>
         </div>
         <div className="grid-item"></div>
-        <div className="grid-item coverimg">
+        <div className="grid-item blogs-item coverimg">
           <div className="openItem">here</div>
           <div className="contentItem">
             <img src={blogsCover} />
