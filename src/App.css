@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  background-color: #181818;
+  height: fit-content;
 }
 
 .App-logo {
@@ -13,26 +15,127 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+/* ========================================================================= */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 1%;
+  padding: 2%;
+}
+
+.grid-item {
+  background-color: #ccc;
+  padding: 0;
+  border-radius: 12px;
+  position: relative;
+}
+
+.big-item {
+  grid-row: 1 / span 2;
+  grid-column: 1 / span 2;
+  padding: 0;
+  background-color: white;
+}
+
+img {
+  /* height: 100%; */
+  width: 80%;
+  float: center;
+}
+
+.mascot-item {
+  background-color: #ffeded;
+}
+
+.coverimg img {
+  width: 100%;
+}
+
+.big-item3-1 {
+  grid-row: 2 / span 2;
+  grid-column: 3 / span 1;
+}
+
+/* Make each cell a square */
+.grid-item,
+.big-item,
+.big-item3-1 {
+  padding-top: 100%;
+}
+
+.red {
+  background-color: red;
+}
+
+.openItem {
+  position: absolute;
+  top: 2%;
+  right: 3%;
+  background-color: yellow;
+  z-index: 5;
+}
+
+.contentItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 2%;
+  right: 0;
+  font-size: 1em;
+  padding: 2%;
+  height: 96%;
+}
+
+/* ========================================================================= */
+
+@media (max-width: 600px) {
+  .App {
+    height: fit-content;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    padding: 5%;
+    grid-gap: 0.8%;
+  }
+
+  .big-item {
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+  }
+
+  .big-item3-1 {
+    grid-row: 2 / span 1;
+    grid-column: 3 / span 1;
+    /* padding-right: 10%; */
+  }
+
+  .big-item,
+  .big-item3-1 {
+    /* grid-row: 1; */
+    grid-column: auto;
+  }
+}
+
+/* ========================================================================= */
+
+@media (min-height: 1000px) {
+  .App {
+    height: 100vh;
   }
 }
