@@ -53,10 +53,6 @@ img {
   float: center;
 }
 
-.mascot-item {
-  background-color: #ffeded;
-}
-
 .coverimg img {
   width: 100%;
   bottom: 0;
@@ -85,8 +81,21 @@ img {
   position: absolute;
   top: 2%;
   right: 3%;
-  background-color: yellow;
+  /* background-color: yellow; */
   z-index: 5;
+  height: 25px;
+  width: 25px;
+  transition: ease-in-out 0.2s;
+}
+
+.openItem img {
+  left: 0;
+  width: 100%;
+}
+
+.openItem:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 .contentItem {
@@ -114,6 +123,18 @@ img {
     transparent 0
   );
   background-size: 30px 30px;
+}
+
+/* ==================================== */
+
+.mascot-item {
+  background-color: #ffeded;
+}
+
+/* ==================================== */
+
+.apps-item {
+  background-color: #181818;
 }
 /* ========================================================================= */
 
