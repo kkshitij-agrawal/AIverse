@@ -5,6 +5,7 @@ import mascot from "./Assets/mascot.png";
 import blogsCover from "./Assets/blogscover.svg";
 import appsCover from "./Assets/appBg.svg";
 import arrowIcon from "./Assets/arrow.svg";
+import xtreakCover from "./Assets/xtreak.svg";
 
 export default function App() {
   return (
@@ -47,7 +48,16 @@ export default function App() {
             <img src={mascot} alt="" />
           </div>
         </div>
-        <div className="grid-item"></div>
+        <div className="grid-item xtreak-item">
+          <div className="openItem">
+            <img src={arrowIcon} />
+          </div>
+          <div className="contentItem">
+            <p>100 days challenge </p>
+
+            <img src={xtreakCover} />
+          </div>
+        </div>{" "}
         <div className="grid-item"></div>
       </div>
     </div>

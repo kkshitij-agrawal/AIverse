@@ -132,6 +132,30 @@ img {
 .apps-item {
   background-color: #181818;
 }
+
+/*____________________________________________________________________________*/
+
+.xtreak-item {
+  background-color: #181818;
+  overflow: hidden;
+  /* padding: 5%;   */
+}
+
+.xtreak-item .openItem img {
+  filter: invert(1);
+  opacity: 0.8;
+}
+
+.xtreak-item .openItem p {
+  filter: invert(1);
+  opacity: 0.8;
+}
+
+.xtreak-item img {
+  padding-top: 6%;
+  /* filter : linear-gradient(to top, #fff 50%, #181818 0%); */
+}
+
 /*____________________________________________________________________________*/
 
 @media (max-width: 600px) {
