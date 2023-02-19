@@ -1,3 +1,4 @@
+import React from "react";
 import "./App.css";
 import headline from "./Assets/justonemoreproject.svg";
 import mascot from "./Assets/mascot.png";
@@ -5,7 +6,7 @@ import blogsCover from "./Assets/blogscover.svg";
 import appsCover from "./Assets/appBg.svg";
 import arrowIcon from "./Assets/arrow.svg";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
       <div className="grid-container">
@@ -52,5 +53,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
