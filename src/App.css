@@ -52,6 +52,10 @@
   background-color: white;
 }
 
+.big-item p {
+  width: 85%;
+}
+
 img {
   /* height: 100%; */
   width: 80%;
@@ -166,6 +170,7 @@ img {
 
 .xtreak-item p {
   color: white;
+  margin-bottom: 3%;
 }
 
 .xtreak-item p:nth-child(2) {
@@ -260,6 +265,20 @@ input[type="submit"]:hover {
   .big-item3-1 {
     /* grid-row: 1; */
     grid-column: auto;
+  }
+
+  .xtreak-item p {
+    font-size: 1.5em;
+  }
+
+  .xtreak-item p:nth-child(2) {
+    font-size: 1em;
+  }
+
+  .newsletter-item p {
+    font-size: 1.5em;
+    width: 90%;
+    z-index: 1;
   }
 }
 
