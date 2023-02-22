@@ -5,7 +5,8 @@ import mascot from "./Assets/mascot.png";
 import blogsCover from "./Assets/blogscover.svg";
 import appsCover from "./Assets/appBg.svg";
 import arrowIcon from "./Assets/arrow.svg";
-import xtreakCover from "./Assets/xtreak.svg";
+import xtreakCover from "./Assets/xtreak1.svg";
+import newsCover from "./Assets/newscover.svg";
 
 export default function App() {
   return (
@@ -53,12 +54,33 @@ export default function App() {
             <img src={arrowIcon} />
           </div>
           <div className="contentItem">
-            <p>100 days challenge </p>
+            <p>100 days of building </p>
+            <p>Started on 01 Feb 2023</p>
 
             <img src={xtreakCover} />
           </div>
-        </div>{" "}
-        <div className="grid-item"></div>
+        </div>
+        <div className="grid-item newsletter-item">
+          <div className="contentItem">
+            <p>
+              Sign up to get the <b>juiciest behind the scenes!</b>
+            </p>
+            <input
+              type="text"
+              placeholder="Email address"
+              name="mail"
+              required
+            />
+            <input type="submit" value="Let's go!" />
+
+            <p>
+              <i>
+                Only accepting the <b>first 50 people</b>
+              </i>
+            </p>
+            <img src={newsCover} alt="" />
+          </div>
+        </div>
       </div>
     </div>
   );

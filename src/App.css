@@ -37,7 +37,13 @@
   padding: 0;
   border-radius: 12px;
   position: relative;
+  transition: ease-in-out 0.2s;
 }
+/* 
+.grid-item:hover {
+  transform: scale(1.05);
+  z-index: 5;
+} */
 
 .big-item {
   grid-row: 1 / span 2;
@@ -124,7 +130,7 @@ img {
 /*____________________________________________________________________________*/
 
 .mascot-item {
-  background-color: #ffeded;
+  background-color: hsl(0, 100%, 93%);
 }
 
 /*____________________________________________________________________________*/
@@ -138,6 +144,7 @@ img {
 .xtreak-item {
   background-color: #181818;
   overflow: hidden;
+  overflow-y: scroll;
   /* padding: 5%;   */
 }
 
@@ -153,7 +160,75 @@ img {
 
 .xtreak-item img {
   padding-top: 6%;
+  padding-bottom: 6%;
   /* filter : linear-gradient(to top, #fff 50%, #181818 0%); */
+}
+
+.xtreak-item p {
+  color: white;
+}
+
+.xtreak-item p:nth-child(2) {
+  margin-top: 0%;
+
+  color: rgb(131, 131, 131);
+  font-size: 0.8em;
+}
+
+/*____________________________________________________________________________*/
+
+.newsletter-item {
+  background-color: rgb(203, 255, 184);
+  overflow: hidden;
+}
+
+.newsletter-item img {
+  position: absolute;
+  width: 150%;
+  opacity: 0.9;
+  height: 120%;
+  top: -10%;
+}
+
+.newsletter-item p {
+  font-size: 0.8em;
+  width: 90%;
+  z-index: 1;
+}
+
+.newsletter-item i {
+  font-size: 0.75em;
+  padding: 2%;
+  padding-left: 4%;
+  padding-right: 4%;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+input[type="text"],
+input[type="submit"] {
+  z-index: 1;
+
+  width: 90%;
+  padding: 12px;
+  /* margin: 8px 0; */
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+
+input[type="submit"] {
+  width: 60%;
+  margin-top: 2%;
+  background-color: #000;
+  color: white;
+  border: none;
+}
+
+input[type="submit"]:hover {
+  opacity: 0.8;
+  cursor: pointer;
 }
 
 /*____________________________________________________________________________*/
@@ -194,4 +269,28 @@ img {
   .App {
     height: 100vh;
   }
+}
+
+/*____________________________________________________________________________*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #434343;
+  border-radius: 20px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(156, 156, 156);
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
