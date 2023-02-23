@@ -51,13 +51,13 @@ export default function App() {
         </div>
         <div className="grid-item xtreak-item">
           <div className="openItem">
-            <img src={arrowIcon} />
+            <img src={arrowIcon} alt="" />
           </div>
           <div className="contentItem">
             <p>100 days of building </p>
             <p>Started on 01 Feb 2023</p>
 
-            <img src={xtreakCover} />
+            <img src={xtreakCover} alt="" />
           </div>
         </div>
         <div className="grid-item newsletter-item">
