@@ -4,6 +4,10 @@
   height: fit-content;
 }
 
+body {
+  margin: 0px;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -70,6 +74,7 @@ img {
 /*____________________________________________________________________________*/
 
 .big-item3-1 {
+  background-color: #b897ff;
   grid-row: 2 / span 2;
   grid-column: 3 / span 1;
 }
@@ -79,10 +84,6 @@ img {
 .big-item,
 .big-item3-1 {
   padding-top: 100%;
-}
-
-.red {
-  background-color: red;
 }
 
 .openItem {
@@ -102,7 +103,7 @@ img {
 }
 
 .openItem:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
   cursor: pointer;
 }
 
@@ -131,7 +132,31 @@ img {
   );
   background-size: 30px 30px;
 }
+
+.blogs-item #blogSpiral {
+  position: absolute;
+  width: 100%;
+  opacity: 1;
+  height: 9%;
+  top: -2%;
+}
+
+.blogs-item .blogcoverImg {
+  mix-blend-mode: darken;
+  width: 100%;
+}
 /*____________________________________________________________________________*/
+
+.twitter-item {
+  background-color: #6bafe8;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.twitter-item .contentItem {
+  padding: 5%;
+}
+/* ___________________________________________________________________________ */
 
 .mascot-item {
   background-color: hsl(0, 100%, 93%);
@@ -142,6 +167,11 @@ img {
 .apps-item {
   background-color: #181818;
 }
+/* 
+.appGrid {
+  z-index: 10;
+  position: absolute;
+} */
 
 /*____________________________________________________________________________*/
 
@@ -286,7 +316,7 @@ input[type="submit"]:hover {
 
 @media (min-height: 1000px) {
   .App {
-    height: 100vh;
+    height: fit-content;
   }
 }
 
