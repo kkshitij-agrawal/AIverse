@@ -8,9 +8,9 @@ import arrowIcon from "./Assets/arrow.svg";
 import xtreakCover from "./Assets/xtreak1.svg";
 import newsCover from "./Assets/newscover.svg";
 import blogsSpiral from "./Assets/blogspiral.svg";
-import projectsGrid from "./Assets/projectsGrid.svg";
+import wipSticker from "./Assets/wip.svg";
 
-import { Tweet, Follow, Timeline } from "react-twitter-widgets";
+import { Timeline } from "react-twitter-widgets";
 
 export default function App() {
   return (
@@ -51,7 +51,11 @@ export default function App() {
           </div>
         </div>
 
-        <div className="grid-item big-item3-1 "></div>
+        <div className="grid-item big-item3-1 wip-item">
+          <div className="contentItem">
+            <img src={wipSticker} alt="" />
+          </div>
+        </div>
 
         <div className="grid-item twitter-item">
           <div className="contentItem">
@@ -62,10 +66,6 @@ export default function App() {
               }}
               options={{ width: "340", chrome: "noheader" }}
             />
-
-            {/* <Tweet tweetId="1671296157086015493" />
-            <Follow username="reactjs" options={{ size: "large" }} />;
-            <Tweet tweetId="1633202122341621762" /> */}
           </div>
         </div>
 

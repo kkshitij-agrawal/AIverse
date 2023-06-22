@@ -137,14 +137,20 @@ img {
   position: absolute;
   width: 100%;
   opacity: 1;
-  height: 9%;
-  top: -2%;
+  height: 8%;
+  top: 1%;
 }
 
 .blogs-item .blogcoverImg {
   mix-blend-mode: darken;
   width: 100%;
 }
+
+.blogs-item .openItem img {
+  filter: invert(1);
+  opacity: 1;
+}
+
 /*____________________________________________________________________________*/
 
 .twitter-item {
@@ -167,11 +173,20 @@ img {
 .apps-item {
   background-color: #181818;
 }
-/* 
-.appGrid {
-  z-index: 10;
+
+.apps-bg {
+  background-color: #ffc830;
+}
+
+/*____________________________________________________________________________*/
+
+.wip-item img {
   position: absolute;
-} */
+  width: 30%;
+  left: -3%;
+  top: -2%;
+  transform: rotate(-20deg);
+}
 
 /*____________________________________________________________________________*/
 
