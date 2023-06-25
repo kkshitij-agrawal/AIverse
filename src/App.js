@@ -64,7 +64,7 @@ export default function App() {
                 sourceType: "url",
                 url: "https://twitter.com/withrebus",
               }}
-              options={{ width: "340", chrome: "noheader" }}
+              options={{ width: "320", chrome: "noheader" }}
             />
           </div>
         </div>
