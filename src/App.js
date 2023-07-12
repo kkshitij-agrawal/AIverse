@@ -10,7 +10,7 @@ import newsCover from "./Assets/newscover.svg";
 import blogsSpiral from "./Assets/blogspiral.svg";
 import wipSticker from "./Assets/wip.svg";
 
-import { Timeline } from "react-twitter-widgets";
+import { Tweet } from "react-twitter-widgets";
 
 export default function App() {
   return (
@@ -21,12 +21,12 @@ export default function App() {
             <img src={arrowIcon} alt="" />
           </div>
           <div className="contentItem">
-            <p>a designer, developer and an AI trio ✨ </p>
+            <p>staying relevant, riding the AI spaceship✨ </p>
             <img src={headline} alt="" />
 
             <p>
-              taking on new challenges, riding the latest trends and building
-              for the future 🚀
+             on a mission to unbundle current patterns, 
+            design and build for the future 🚀
             </p>
           </div>
         </div>
@@ -59,13 +59,7 @@ export default function App() {
 
         <div className="grid-item twitter-item">
           <div className="contentItem">
-            <Timeline
-              dataSource={{
-                sourceType: "url",
-                url: "https://twitter.com/withrebus",
-              }}
-              options={{ width: "320", chrome: "noheader" }}
-            />
+            <Tweet tweetId="1679059141694836736" />
           </div>
         </div>
 
