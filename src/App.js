@@ -1,7 +1,6 @@
 import React from "react";
 import "./App.css";
 import headline from "./Assets/justonemoreproject.svg";
-import mascot from "./Assets/mascot.png";
 import blogsCover from "./Assets/blogscover.svg";
 import appsCover from "./Assets/appBg.svg";
 import arrowIcon from "./Assets/arrow.svg";
@@ -65,7 +64,7 @@ export default function App() {
 
         <div className="grid-item mascot-item coverimg">
           <div className="contentItem">
-            <img src={mascot} alt="" />
+           
           </div>
         </div>
 
