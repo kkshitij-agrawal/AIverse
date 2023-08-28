@@ -165,7 +165,16 @@ img {
 /* ___________________________________________________________________________ */
 
 .mascot-item {
-  background-color: hsl(0, 100%, 93%);
+  /* background-color: hsl(0, 100%, 93%); */
+  background-color: rgb(233, 237, 255);
+  overflow: hidden;
+}
+
+.mascot-item img {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  transform: scaleX(-1);
 }
 
 /*____________________________________________________________________________*/
@@ -191,7 +200,7 @@ img {
 /*____________________________________________________________________________*/
 
 .xtreak-item {
-  background-color: #181818;
+  background-color: #000;
   overflow: hidden;
   overflow-y: scroll;
   /* padding: 5%;   */
