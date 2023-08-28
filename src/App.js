@@ -102,6 +102,7 @@ export default function App() {
               frameBorder="0"
               scrolling="no"
               style={{
+                zIndex: "10",
                 margin: "0",
                 borderRadius: "0px",
                 backgroundColor: "transparent",
