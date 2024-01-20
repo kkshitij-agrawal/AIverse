@@ -60,8 +60,8 @@ export default function App() {
             <img src={headline} alt="" />
 
             <p>
-              on a mission to unbundle the current processes; <br/>design and build
-              for the future 🚀
+              on a mission to unbundle the current processes; design and build
+              for the future
             </p>
           </div>
         </div>
