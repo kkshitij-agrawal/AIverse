@@ -6,6 +6,7 @@ import appsCover from "./Assets/appBg.svg";
 import arrowIcon from "./Assets/arrow.svg";
 import xtreakCover from "./Assets/xtreak1.svg";
 import newsCover from "./Assets/newscover.svg";
+import astroboy from "./Assets/astroboy.png";
 import blogsSpiral from "./Assets/blogspiral.svg";
 import wipSticker from "./Assets/wip.svg";
 import astronautSticker from "./Assets/astro-trans.png";
@@ -159,12 +160,17 @@ export default function App() {
               frameBorder="0"
               scrolling="no"
             />
+
             <p>
               <i>
-                Only accepting the <b>first 50 people</b>
+                <a href="https://voyager.beehiiv.com/p/altitudes-of-ai">(latest) <b>Altitudes of AI-UX?</b></a>
+              </i>
+            
+              <i>
+              <a href="https://voyager.beehiiv.com/p/paradigm-shift-aiux">(first) <b>AIxDesign paradigm shift</b></a>
               </i>
             </p>
-            <img src={newsCover} alt="" />
+            <img src={astroboy} alt="" />
           </div>
         </div>
         
